@@ -4,7 +4,7 @@
 
 function namaz() {
     let city=document.querySelector('#weathers').value
-    axios.get(`http://api.aladhan.com/v1/calendarByCity?city=${city}&country=Pakistan&method=2&month=09&year=2022`)
+    axios.get(`https://api.aladhan.com/v1/calendarByCity?city=${city}&country=Pakistan&method=2&month=09&year=2022`)
     .then((response) => {
         console.log(response.data)
         console.log(response.data.data[0].date.gregorian.date)
